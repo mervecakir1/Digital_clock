@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "VT323", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#clock-container {
+    border: 5px solid #535318;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#clock {
+    font-size: 12vw;
+    margin-bottom: 10px;
+    color: #e25d10;
+}
+
+#date {
+    font-size: 6vw;
+    color: #e25d10;
+}
+
+
+body.dark-theme {
+    background-color: rgb(3, 4, 52);
+    color: rgb(255, 255, 255);
+}
+
+
+body.light-theme {
+    background-color: rgb(186, 169, 16);
+    color: rgb(241, 240, 240);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e25d10;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a44107;
+}
